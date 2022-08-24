@@ -1,0 +1,8 @@
+mymodule.account:
+  path: '/user/{user}/custom'
+  defaults: 
+    _form: '\Drupal\mymodule\Form\MyModuleUserSettingsForm'
+    _title: 'Custom Settings'
+  requirements:
+    _permission: 'access content'
+    user: \d+
